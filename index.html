@@ -46,22 +46,26 @@
        </nav>
        <section class="flex justify-center my-10">
         
-            <input type="text" placeholder="Type here" class="input w-full max-w-xs bg-slate-100" />
-        <button id="search-btn" class=" btn px-5 btn-primary font-bold text-white">Search</button>
+            <input id="search-input" type="text" placeholder="Type here" class="input w-full max-w-xs bg-slate-100" />
+        <button onclick="handulesearch()" id="search-btn" class=" btn px-5 btn-primary font-bold text-white">Search</button>
        
         
        </section>
-       <div id="loading" class="justify-center hidden">
+       <div id="loading" class=" flex justify-center ">
         <span class="loading loading-ring loading-lg"></span>
        </div>
 
     </header>
     <main  class="w-11/12 mx-auto">
         <section id="phone-card" class="grid grid-cols-3 gap-5">
-            
+          
+           
 
 
         </section>
+        <div class="flex justify-center">
+          <button  id="sowBtn" onclick="loadData2()" class="btn btn-primary">Show More</button>
+        </div>
 
     </main>
     <footer>
